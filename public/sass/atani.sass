@@ -5,8 +5,13 @@ $maincolorback: #b8dd5a
 $maincolorfront: #1d9531
 $fontcolor: #1d9531
 $paddingtop: 25px
-$bodyPaddingTop: 30px
+$bodyPaddingTop: 60px
+$menuFontStyle: white
 
+.brand-image
+  max-height: 48px
+  margin-top: -14px
+  border-radius: 20px
 
 body
   padding-top: $bodyPaddingTop
@@ -15,7 +20,8 @@ body
   padding-top: $paddingtop
 
 .footer div 
-  margin-top: 10px !important
+  background-color: $maincolorfront
+  color: $menuFontStyle
 
 ul
   list-style-type: none
@@ -32,7 +38,15 @@ div
 
 #mainmenu 
   background-color: $maincolorfront
+  ul
+    li:not(.active)
+      a
+        color: $menuFontStyle
 
+.navbar-default
+  .navbar-brand
+    font-weight: 700
+    color: white !important
 
 #site-name a 
   position: absolute
@@ -57,6 +71,9 @@ div
   position: absolute
   top: 20px
   left: 50px
+
+.mainPic
+  height: 350px
 
 .content
   margin-left: 0px

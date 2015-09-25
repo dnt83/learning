@@ -1,26 +1,39 @@
 doctype
-html
+html(ng-app='atanivn',ng-controller="atanimainCtrl")
     head
-        title=title
+        title {{ title }}
+        meta(name="viewport",context="width=device-width, initial-scale=1")
         script(type='text/javascript',src="angular/angular.min.js")
         script(type="text/javascript",src="javascripts/app.js")
+        script(type="text/javascript",src="javascripts/jquery.min.js")
+        script(type="text/javascript",src="javascripts/bootstrap.min.js")
         link(href="/stylesheets/atani.css",rel="stylesheet")
         link(href='https://fonts.googleapis.com/css?family=Quicksand:400,700',rel='stylesheet',type='text/css')
-    body(ng-app='atanivn',ng-controller="atanimainCtrl")
+        link(rel="icon",href="/images/favicon.ico")
+    body
         nav#mainmenu.navbar.navbar-default.navbar-fixed-top
             .container-fluid
-                .collapse.navbar-collapse
-                    ul.nav.navbar-nav
-                        li.text-uppercase(ng-repeat="mnu in menus")
-                            a(href="#"){{mnu}}
+                .navbar-header
+                    a.navbar-brand.brand(href="/")
+                        img.brand-image.img-rounded.img-responsive(ng-src="{{ logo_url }}")
+                    button.navbar-toggle.collapsed(type='button',data-toggle="collapse",data-target="#ataniMenu")
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                .collapse.navbar-collapse#ataniMenu
+                    ul.nav.navbar-nav.text-uppercase
+                        li(ng-repeat="mnu in menus",class="{{ mnu['css'] }}")
+                            a(href="{{ mnu['href'] }}")
+                                span(class="{{ mnu['icon'] }}")
+                                | &nbsp;{{ mnu['name'] }}
         .container
             .row
                 .col-md-12.col-xs-12
                     .banner
                         a(href='/',title='Home')
-                            img(class='center-block img-responsive',alt='Banner Image',src="{{banner_url}}")
-                        .img_overlay.img-responsive
-                            img(src='{{ logo_url }}',alt="Logo")
+                            img(class='center-block img-responsive',alt='Banner Image',ng-src="{{ banner_url }}")
+                        .img-responsive.img-rounded.img_overlay
+                            img(ng-src='{{ logo_url }}',alt="Logo")
                     div
                         h1#site-name(class="text-center text-uppercase")
                             a(href="/",title='Home') matcha tea atani
@@ -29,9 +42,9 @@ html
                             a(href="/",title="Home") matcha tea atani @ Slogan
             .row.content
                 .col-xs-12.col-md-12.hline
-                .col-xs-12.col-md-6
-                    img.img-responsive(src="{{ anhcoc_url }}",alt='Anh loi')
-                .col-xs-12.col-md-6.text-uppercase
+                .hidden-xs.col-sm-6.col-md-6.col-lg-6
+                    img.img-responsive.mainPic(ng-src="{{ anhcoc_url }}",alt='Anh loi')
+                .col-xs-12.col-sm-6.text-uppercase
                     h1 Trà Xanh và hơn thế nữa
                     h1 10x giá trị dinh dưỡng
                     h1 137x chất chống oxy hóa
