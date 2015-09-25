@@ -1,0 +1,71 @@
+@import "../bower_components/bootstrap/dist/css/bootstrap.min.css"
+
+$fontstyle: italic
+$maincolorback: #b8dd5a
+$maincolorfront: #1d9531
+$fontcolor: #1d9531
+$paddingtop: 25px
+$bodyPaddingTop: 30px
+
+
+body
+  padding-top: $bodyPaddingTop
+
+.footer
+  padding-top: $paddingtop
+
+.footer div 
+  margin-top: 10px !important
+
+ul
+  list-style-type: none
+
+.hline 
+  background-color: $maincolorback
+  height: 5px
+
+.banner 
+  background-color: $maincolorback
+
+div 
+  color: $fontcolor
+
+#mainmenu 
+  background-color: $maincolorfront
+
+
+#site-name a 
+  position: absolute
+  top: 10px
+  left: 180px
+  font-family: Quicksand, serif
+  font-weight: 700
+  font-size: 40px
+  font-style: $fontstyle
+  color: white
+
+
+#slogan a
+  font-family: 'Open Sans',sans-serif
+  font-size: 20px
+  font-style: $fontstyle
+  position: absolute
+  top: 60px
+  left: 180px
+
+.img_overlay
+  position: absolute
+  top: 20px
+  left: 50px
+
+.content
+  margin-left: 0px
+  margin-right: 0px
+  background: rgb(246,230,180) /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(246,230,180,1) 0%, rgba(237,144,23,1) 100%) /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(246,230,180,1)), color-stop(100%,rgba(237,144,23,1))) /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%) /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%) /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%) /* IE10+ */
+  background: linear-gradient(to right, rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%) /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=1 ) /* IE6-9 */

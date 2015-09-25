@@ -2,10 +2,11 @@
 /* line 3, ../sass/style.sass */
 body {
   padding: 50px;
+  padding-top: 30px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-/* line 8, ../sass/style.sass */
+/* line 9, ../sass/style.sass */
 a {
   color: #00B7FF;
 }

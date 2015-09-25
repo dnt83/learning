@@ -25,8 +25,10 @@ app.use(express.static(path.join(__dirname,'..' ,'public')));
 
 var routes = require("../routes/index");
 var getdata = require("../routes/getdata");
+var atanivn = require("../routes/atanivn");
 
-app.use("/", routes);
+app.use("/", atanivn);
+app.use("/index", routes);
 app.use("/getdata", getdata);
 
 // catch 404 and forward to error handler

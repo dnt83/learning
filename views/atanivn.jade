@@ -1,0 +1,53 @@
+doctype
+html
+    head
+        title=title
+        script(type='text/javascript',src="angular/angular.min.js")
+        script(type="text/javascript",src="javascripts/app.js")
+        link(href="/stylesheets/atani.css",rel="stylesheet")
+        link(href='https://fonts.googleapis.com/css?family=Quicksand:400,700',rel='stylesheet',type='text/css')
+    body(ng-app='atanivn',ng-controller="atanimainCtrl")
+        nav#mainmenu.navbar.navbar-default.navbar-fixed-top
+            .container-fluid
+                .collapse.navbar-collapse
+                    ul.nav.navbar-nav
+                        li.text-uppercase(ng-repeat="mnu in menus")
+                            a(href="#"){{mnu}}
+        .container
+            .row
+                .col-md-12.col-xs-12
+                    .banner
+                        a(href='/',title='Home')
+                            img(class='center-block img-responsive',alt='Banner Image',src="{{banner_url}}")
+                        .img_overlay.img-responsive
+                            img(src='{{ logo_url }}',alt="Logo")
+                    div
+                        h1#site-name(class="text-center text-uppercase")
+                            a(href="/",title='Home') matcha tea atani
+                    div
+                        h2#slogan(class="text-center text-uppercase")
+                            a(href="/",title="Home") matcha tea atani @ Slogan
+            .row.content
+                .col-xs-12.col-md-12.hline
+                .col-xs-12.col-md-6
+                    img.img-responsive(src="{{ anhcoc_url }}",alt='Anh loi')
+                .col-xs-12.col-md-6.text-uppercase
+                    h1 Trà Xanh và hơn thế nữa
+                    h1 10x giá trị dinh dưỡng
+                    h1 137x chất chống oxy hóa
+                    h1 so với nước trà pha thường
+                .col-xs-12.col-md-12.hline
+            .row
+                ul
+                    li.col-xs-12.col-md-6(ng-repeat="note in notes")
+                        i.fa.fa-hand-o-right {{ note }}
+        .footer
+            .container
+                .row
+                    .col-xs-12.col-md-12
+                        div.text-center.text-uppercase
+                            strong Công ty TNHH thương mại và xuất nhập khẩu vihaba
+                    .col-xs-12.col-md-12 Địa chỉ: Số 10 Ngách 91/16 Lương Đình Của, Phương Mai, Đống Đa, Hà Nội
+                    .col-xs-12.col-md-12 Văn phòng giao dịch: Số 167 Nguyễn Ngọc Nại, Thanh Xuân, Hà nội
+                    .col-xs-12.col-md-12 Điện thoại: 0466 730 333 / Hotline: 090 567 1102
+                    .col-xs-12.col-md-12 Email: atani@vihaba.vn / Website: www.atani.vn / https://www.facebook.com/matchaatani
