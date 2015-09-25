@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    .h1 {{ 2 + 2 }}
+    .container
+        .navbar.navbar-default.navbar-fixed-top
+            .navbar-header
+                a.navbar-brand(href="/") {{title}} Duong hi 3
+            .collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right(ng-repeat="menu in rightMenus.reverse()")
+                    li
+                        a(hreft="#") {{menu}}
+    .container-fluid.mainSec
+        .container
+            .row
+                .col-xs-12.col-md-12.row-space-large
+                h1.col-xs-12.col-md-12.text-center.text-capitalize.maintitle {{title}} Duong Oi 4
+                h2.col-xs-12.col-md-12.text-center.text-capitalize.text-muted where is awesomeness is brought to life
+                .col-xs-12.col-md-12.lseparate
+                .clearfix
+                .col-xs-12.col-md-12.row-space-small
+                .center-block1.col-md-2.col-xs-2.col-sm-2(ng-repeat="btn in frtButtons")
+                    .btn.btn-default.btn-lg(type="button")
+                        a.text-capitalize(href="{{ btn['src'] }}",class="fa fa-{{ btn['name'] }}")  {{ btn['name'] }}
