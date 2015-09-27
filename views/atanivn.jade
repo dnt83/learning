@@ -4,9 +4,9 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
         title {{ title }}
         meta(name="viewport",context="width=device-width, initial-scale=1")
         script(type='text/javascript',src="angular/angular.min.js")
-        script(type="text/javascript",src="javascripts/app.js")
         script(type="text/javascript",src="javascripts/jquery.min.js")
         script(type="text/javascript",src="javascripts/bootstrap.min.js")
+        script(type="text/javascript",src="javascripts/app.js")
         link(href="/stylesheets/atani.css",rel="stylesheet")
         link(href='https://fonts.googleapis.com/css?family=Quicksand:400,700',rel='stylesheet',type='text/css')
         link(rel="icon",href="/images/favicon.ico")
@@ -40,8 +40,9 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
                     div
                         h2#slogan(class="text-center text-uppercase")
                             a(href="/",title="Home") matcha tea atani @ Slogan
-            .row.content
-                .col-xs-12.col-md-12.hline
+            .row#hlinef
+                .col-xs-12.col-lg-12.hline
+            .row#mainContent
                 .hidden-xs.col-sm-6.col-md-6.col-lg-6
                     img.img-responsive.mainPic(ng-src="{{ anhcoc_url }}",alt='Anh loi')
                 .col-xs-12.col-sm-6.text-uppercase

@@ -16,3 +16,28 @@
         $scope.anhcoc_url = "images/MatchaTea.png";
         $scope.notes = [" Matcha là gì", " Điều gì làm nên khác biệt giữa các loại matcha", " Matcha khác gì với trả xanh?", " Matcha của Atani là loại matcha nào"];
     });
+
+    $(document).ready(function(){
+
+        if ($(document).width() <= 680)
+        {
+            var newSize = 50 - $(document).width()/450*5;
+            $("#hlinef").last().css('padding-top',newSize + "px");
+        }
+        else
+            $("#hlinef").last().css('padding-top',0);
+
+        $(window).resize(function() {
+            if ($(document).width() <= 680)
+                {
+                    var newSize = 50 - $(document).width()/450*5;
+                    $("#hlinef").last().css('padding-top',newSize + "px");
+                }
+            else
+                $("#hlinef").last().css('padding-top',0);
+            //if ($(document).width() <= 680)
+            //    $("#mainContent").last().addClass("contentPaddingTop-small");
+            //else
+            //    $("#mainContent").last().removeClass("contentPaddingTop-small");
+        });
+    });
