@@ -46,26 +46,36 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
                 .hidden-xs.col-sm-6.col-md-6.col-lg-6
                     img.img-responsive.mainPic(ng-src="{{ anhcoc_url }}",alt='Anh loi')
                 .col-xs-12.col-sm-6
-                    h1.advTea
-                        span.advBigger Trà Xanh
-                        small &nbsp;và hơn thế nữa
-                    h1.advTea
-                        strong(style="font-size: 250%") 10x
-                        small &nbsp;giá trị dinh dưỡng
-                    h1 137x chất chống oxy hóa
-                    h1 so với nước trà pha thường
+                    h2
+                        strong.advBigger Trà Xanh
+                        | &nbsp;và hơn thế nữa
+                    h2.advTea
+                        strong.advBigger.strong 10x
+                        | &nbsp;giá trị dinh dưỡng
+                    h2.advTea
+                        strong.advBigger.strong 137x
+                        | &nbsp;chất chống oxy hóa
+                    h2 so với nước trà pha thường
                 .col-xs-12.col-md-12.hline
-            .row
+            .row.voffset4
                 ul
-                    li.col-xs-12.col-md-6(ng-repeat="note in notes")
-                        i.fa.fa-hand-o-right {{ note }}
+                    li.voffset2.col-xs-12.col-md-6(ng-repeat="note in notes")
+                        i.fa.fa-hand-o-right &nbsp;{{ note }}
         .footer
             .container
                 .row
+                    .voffset2
                     .col-xs-12.col-md-12
-                        div.text-center.text-uppercase
+                        h3.text-center.text-uppercase
                             strong Công ty TNHH thương mại và xuất nhập khẩu vihaba
                     .col-xs-12.col-md-12 Địa chỉ: Số 10 Ngách 91/16 Lương Đình Của, Phương Mai, Đống Đa, Hà Nội
                     .col-xs-12.col-md-12 Văn phòng giao dịch: Số 167 Nguyễn Ngọc Nại, Thanh Xuân, Hà nội
                     .col-xs-12.col-md-12 Điện thoại: 0466 730 333 / Hotline: 090 567 1102
-                    .col-xs-12.col-md-12 Email: atani@vihaba.vn / Website: www.atani.vn / https://www.facebook.com/matchaatani
+                    .col-xs-12.col-md-12
+                        | Website:&nbsp;
+                        a(ng-href="{{ urlHome }}") {{ urlHome }}
+                    .col-xs-12.col-md-12
+                        | Email:&nbsp;
+                        a(ng-href="mailto:{{ emailHome }}/?subject={{ subject}}") atani@vihaba.vn
+                        | &nbsp;/&nbsp;
+                        a.i.fa.fa-facebook-square(ng-href="{{ urlFB }}") &nbsp;{{ urlFB }}

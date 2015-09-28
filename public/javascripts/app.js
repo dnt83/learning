@@ -5,7 +5,7 @@
         $scope.banner_url = "images/banner%20Trans.png";
         $scope.parentLogo = "images/vihaba_logo.png";
         $scope.logo_url = "images/Logo.png";
-        $scope.menus = [{'name':'Trang chu','icon':'glyphicon glyphicon-home','href':"/",'css':"active"},
+        $scope.menus = [{'name':'Trang chủ','icon':'glyphicon glyphicon-home','href':"/",'css':"active"},
                         {'name':'giới thiệu','icon':'glyphicon glyphicon-thumbs-up','href':"/"},
                         {'name':'sản phẩm','icon':'glyphicon glyphicon-align-justify','href':"/"},
                         {'name':"thông tin",'icon':'glyphicon glyphicon-info-sign','href':"/"},
@@ -14,7 +14,15 @@
                         ];
         $scope.images = ["Images1", "Images2", "Image3", "Image4", "Image5"];
         $scope.anhcoc_url = "images/MatchaTea.png";
-        $scope.notes = [" Matcha là gì", " Điều gì làm nên khác biệt giữa các loại matcha", " Matcha khác gì với trả xanh?", " Matcha của Atani là loại matcha nào"];
+        $scope.notes = ["Matcha là gì", "Điều gì làm nên khác biệt giữa các loại matcha", "Matcha khác gì với trả xanh?", "Matcha của Atani là loại matcha nào",
+                        "Vì sao nên sử dụng matcha","Tôi nên chọn loại matcha nào",
+                        "Sử dụng matcha như thế nào","Hướng dẫn mua hàng"];
+
+        //Company Info
+        $scope.urlHome = "http://www.atani.vn";
+        $scope.emailHome = "atani@vihaba.vn";
+        $scope.subject = "Xin Chao Matcha Atani";
+        $scope.urlFB = "https://www.facebook.com/matchaatani"
     });
 
     $(document).ready(function(){

@@ -1,4 +1,5 @@
 @import "../bower_components/bootstrap/dist/css/bootstrap.min.css"
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
 
 $fontstyle: italic
 $maincolorback: #b8dd5a
@@ -7,7 +8,31 @@ $fontcolor: #1d9531
 $paddingtop: 25px
 $bodyPaddingTop: 60px
 $menuFontStyle: white
+
 $advTeaColor: #FFFFCC
+$advBiggerFontSize: 200%
+$advTeaBackColor: #FFFFCC
+
+$voffset: 2px
+$voffset1: 4px
+$voffset2: 10px
+$voffset3: 15px
+$voffset4: 20px
+
+.voffset
+  margin-top: $voffset
+
+.voffset1
+  margin-top: $voffset1
+
+.voffset2
+  margin-top: $voffset2
+
+.voffset3
+  margin-top: $voffset3
+
+.voffset4
+  margin-top: $voffset4
 
 .brand-image
   max-height: 48px
@@ -93,4 +118,11 @@ div
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=1 ) /* IE6-9 */
 
 .advTea
-  background-color: #FFFFC
+  background-color: $advTeaBackColor
+
+.advBigger
+  font-size: $advBiggerFontSize
+
+.footer
+  a
+    color: $advTeaBackColor
