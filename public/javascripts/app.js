@@ -18,10 +18,9 @@
     });
 
     $(document).ready(function(){
-
         if ($(document).width() <= 680)
         {
-            var newSize = 50 - $(document).width()/450*5;
+            var newSize = 80 - $(document).width()/450*5;
             $("#hlinef").last().css('padding-top',newSize + "px");
         }
         else
@@ -30,7 +29,7 @@
         $(window).resize(function() {
             if ($(document).width() <= 680)
                 {
-                    var newSize = 50 - $(document).width()/450*5;
+                    var newSize = 80 - $(document).width()/450*5;
                     $("#hlinef").last().css('padding-top',newSize + "px");
                 }
             else

@@ -13,8 +13,8 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
     body
         nav#mainmenu.navbar.navbar-default.navbar-fixed-top
             .container
-                .navbar-header.nav-tabs.nav-justified
-                    a.navbar-brand.brand(href="/")
+                .navbar-header
+                    a.navbar-brand.brand.visible-xs
                         img.brand-image.img-rounded.img-responsive(ng-src="{{ logo_url }}")
                     button.navbar-toggle.collapsed(type='button',data-toggle="collapse",data-target="#ataniMenu")
                         span.icon-bar
@@ -45,9 +45,13 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
             .row#mainContent
                 .hidden-xs.col-sm-6.col-md-6.col-lg-6
                     img.img-responsive.mainPic(ng-src="{{ anhcoc_url }}",alt='Anh loi')
-                .col-xs-12.col-sm-6.text-uppercase
-                    h1 Trà Xanh và hơn thế nữa
-                    h1 10x giá trị dinh dưỡng
+                .col-xs-12.col-sm-6
+                    h1.advTea
+                        span.advBigger Trà Xanh
+                        small &nbsp;và hơn thế nữa
+                    h1.advTea
+                        strong(style="font-size: 250%") 10x
+                        small &nbsp;giá trị dinh dưỡng
                     h1 137x chất chống oxy hóa
                     h1 so với nước trà pha thường
                 .col-xs-12.col-md-12.hline
