@@ -22,13 +22,9 @@ app.use(cookieParser());
 app.use(require('node-compass')({mode: 'expanded'}));
 app.use(express.static(path.join(__dirname,'..' ,'public')));
 
-var routes = require("../routes/index");
-var getdata = require("../routes/getdata");
 var atanivn = require("../routes/atanivn");
 
 app.use("/", atanivn);
-app.use("/index", routes);
-app.use("/getdata", getdata);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
