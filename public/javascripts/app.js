@@ -26,6 +26,20 @@
     });
 
     $(document).ready(function(){
+        $(document).click(function(){
+            $(".antanicontent").addClass('hide');
+            $("#mainContent").removeClass('hide');
+        });
+
+        $('.toogleConent').click(function(e) {
+            e.stopPropagation();
+            var target = "#" + $(this).data("target");
+            $(".antanicontent").not(target).addClass('hide');
+            $(target).removeClass('hide');
+            $("#mainContent").addClass('hide');
+        });
+
+
         if ($(document).width() <= 680)
         {
             var newSize = 80 - $(document).width()/450*5;
