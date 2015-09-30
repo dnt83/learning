@@ -22,8 +22,8 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
                         span.icon-bar
                 .collapse.navbar-collapse#ataniMenu
                     ul.nav.navbar-nav.text-uppercase.nav-tabs.nav-justified
-                        li(ng-repeat="mnu in menus",class="{{ mnu['css'] }}")
-                            a(href="{{ mnu['href'] }}")
+                        li(ng-repeat="mnu in menus",class="{{ mnu['css'] }}",id="{{ mnu['id']}}")
+                            a.btn.toogleConent(data-target="antanicontent",data-value= "{{ mnu['index'] }}")
                                 span(class="{{ mnu['icon'] }}")
                                 | &nbsp;{{ mnu['name'] }}
         .container
@@ -42,10 +42,8 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
                             a(href="/",title="Home") matcha tea atani @ Slogan
             .row#hlinef.zmarginLF
                 .col-xs-12.col-lg-12.hline
-            .row.backgroundMain.zmarginLF.antanicontent.hide#content1
-                h1.col-md-12.col-xs-12 hello
-            .row.backgroundMain.zmarginLF.antanicontent.hide#content2
-                h1.col-md-12.col-xs-12 hello2
+            .row.backgroundMain.zmarginLF
+                h1.col-md-12.col-xs-12.hide#antanicontent
             .row.backgroundMain.zmarginLF#mainContent
                 .hidden-xs.col-sm-6.col-md-6.col-lg-6
                     img.img-responsive.mainPic(ng-src="{{ anhcoc_url }}",alt='Anh loi')
@@ -65,12 +63,12 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
             .row.voffset4
                 ul
                     li.voffset2.col-xs-12.col-md-6(ng-repeat="note in notes")
-                        i.fa.fa-hand-o-right &nbsp;{{ note }}
-            .row
-                ul
-                    li.voffset2.col-xs-12.col-md-6
-                        i.fa.fa-hand-o-right.btn.toogleConent(data-target="content1") Content 1
-                        i.fa.fa-hand-o-right.btn.toogleConent(data-target="content2") Content 2
+                        i.fa.fa-hand-o-right.btn &nbsp;{{ note }}
+            //.row
+            //    ul
+            //        li.voffset2.col-xs-12.col-md-6
+            //            i.fa.fa-hand-o-right.btn.toogleConent(,data-value=) Content 1
+            //            i.fa.fa-hand-o-right.btn.toogleConent(data-target="antanicontent",data-value="generatematcha") Content 2
         .footer
             .container
                 .row

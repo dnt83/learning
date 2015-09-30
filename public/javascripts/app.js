@@ -5,9 +5,9 @@
         $scope.banner_url = "images/banner%20Trans.png";
         $scope.parentLogo = "images/vihaba_logo.png";
         $scope.logo_url = "images/Logo.png";
-        $scope.menus = [{'name':'Trang chủ','icon':'glyphicon glyphicon-home','href':"/",'css':"active"},
-                        {'name':'giới thiệu','icon':'glyphicon glyphicon-thumbs-up','href':"/"},
-                        {'name':'sản phẩm','icon':'glyphicon glyphicon-align-justify','href':"/"},
+        $scope.menus = [{'name':'Trang chủ','icon':'glyphicon glyphicon-home','href':"/",'css':"active",'id':"mainMenu"},
+                        {'name':'giới thiệu','icon':'glyphicon glyphicon-thumbs-up','href':"/",'index':'aboutmatcha','css':'toogleContent'},
+                        {'name':'sản phẩm','icon':'glyphicon glyphicon-align-justify','href':"/",'index':"products",'css':'toogleContent'},
                         {'name':"thông tin",'icon':'glyphicon glyphicon-info-sign','href':"/"},
                         {'name':"mua hàng",'icon':'glyphicon glyphicon-question-sign','href':"/"},
                         {'name':"liên hệ",'icon':'glyphicon glyphicon-earphone','href':"/"}
@@ -27,16 +27,37 @@
 
     $(document).ready(function(){
         $(document).click(function(){
-            $(".antanicontent").addClass('hide');
+            $("#antanicontent").addClass('hide');
             $("#mainContent").removeClass('hide');
+
+            $(".active").removeClass('active');
+            $("#mainMenu").addClass('active');
         });
 
-        $('.toogleConent').click(function(e) {
+        //Click on menu (except main menu)
+        $('.toogleConent').not($("#mainMenu").children()).click(function(e) {
+            //Stop other event
             e.stopPropagation();
+
+            //Get target value
             var target = "#" + $(this).data("target");
-            $(".antanicontent").not(target).addClass('hide');
+            //Set active clicked element
+            $(".active").removeClass('active');
+            $(this).parent().addClass('active');
+
             $(target).removeClass('hide');
             $("#mainContent").addClass('hide');
+
+            var strFileName = $(this).data('value') + ".html";
+
+            if (strFileName != ".html")
+                $.ajax({
+                    url : "../contents/" + strFileName,
+                    dataType: "text",
+                    success : function (data) {
+                        $(target).html(data);
+                    }
+                });
         });
 
 
