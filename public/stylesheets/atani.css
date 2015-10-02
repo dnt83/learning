@@ -1,0 +1,152 @@
+@import url(../bower_components/bootstrap/dist/css/bootstrap.min.css);
+@import url(font-awesome.min.css);
+/* line 22, ../sass/atani.sass */
+.voffset {
+  margin-top: 2px;
+}
+
+/* line 25, ../sass/atani.sass */
+.voffset1 {
+  margin-top: 4px;
+}
+
+/* line 28, ../sass/atani.sass */
+.voffset2 {
+  margin-top: 10px;
+}
+
+/* line 31, ../sass/atani.sass */
+.voffset3 {
+  margin-top: 15px;
+}
+
+/* line 34, ../sass/atani.sass */
+.voffset4 {
+  margin-top: 20px;
+}
+
+/* line 37, ../sass/atani.sass */
+.brand-image {
+  max-height: 48px;
+  margin-top: -14px;
+  border-radius: 20px;
+}
+
+/* line 42, ../sass/atani.sass */
+body {
+  padding-top: 60px;
+}
+
+/* line 45, ../sass/atani.sass */
+.footer {
+  padding-top: 25px;
+}
+
+/* line 48, ../sass/atani.sass */
+.footer div {
+  background-color: #1d9531;
+  color: white;
+}
+
+/* line 52, ../sass/atani.sass */
+ul {
+  list-style-type: none;
+}
+
+/* line 55, ../sass/atani.sass */
+.hline {
+  background-color: #b8dd5a;
+  height: 5px;
+}
+
+/* line 59, ../sass/atani.sass */
+.banner {
+  background-color: #b8dd5a;
+}
+
+/* line 62, ../sass/atani.sass */
+div {
+  color: #1d9531;
+}
+
+/* line 65, ../sass/atani.sass */
+#mainmenu {
+  background-color: #1d9531;
+}
+/* line 69, ../sass/atani.sass */
+#mainmenu ul li:not(.active) a {
+  color: white;
+}
+
+/* line 73, ../sass/atani.sass */
+.navbar-default .navbar-brand {
+  font-weight: 700;
+  color: white !important;
+}
+
+/* line 77, ../sass/atani.sass */
+#site-name a {
+  position: absolute;
+  top: 10px;
+  left: 180px;
+  font-family: Quicksand, serif;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: italic;
+  color: white;
+}
+
+/* line 88, ../sass/atani.sass */
+#slogan a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  position: absolute;
+  top: 60px;
+  left: 180px;
+}
+
+/* line 96, ../sass/atani.sass */
+.img_overlay {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+/* line 101, ../sass/atani.sass */
+.mainPic {
+  height: 350px;
+}
+
+/* line 104, ../sass/atani.sass */
+.backgroundMain {
+  background: #f6e6b4;
+  background: -moz-linear-gradient(left, #f6e6b4 0%, #ed9017 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #f6e6b4), color-stop(100%, #ed9017));
+  background: -webkit-linear-gradient(left, #f6e6b4 0%, #ed9017 100%);
+  background: -o-linear-gradient(left, #f6e6b4 0%, #ed9017 100%);
+  background: -ms-linear-gradient(left, #f6e6b4 0%, #ed9017 100%);
+  background: linear-gradient(to right, #f6e6b4 0%, #ed9017 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=1 );
+}
+
+/* line 114, ../sass/atani.sass */
+.advTea {
+  background-color: #FFFFCC;
+}
+
+/* line 117, ../sass/atani.sass */
+.advBigger {
+  font-size: 200%;
+}
+
+/* line 121, ../sass/atani.sass */
+.footer a {
+  color: #FFFFCC;
+}
+
+/* line 124, ../sass/atani.sass */
+.zmarginLF {
+  margin-left: 0px;
+  margin-right: 0px;
+}
