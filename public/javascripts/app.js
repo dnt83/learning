@@ -52,7 +52,7 @@
 
             if (strFileName != ".html")
                 $.ajax({
-                    url : "../contents/" + strFileName,
+                    url : "contents/" + strFileName,
                     dataType: "text",
                     success : function (data) {
                         $(target).html(data);
