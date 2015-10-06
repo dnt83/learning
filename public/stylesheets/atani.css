@@ -109,16 +109,22 @@ div {
 /* line 96, ../sass/atani.sass */
 .img_overlay {
   position: absolute;
-  top: 20px;
-  left: 50px;
+  top: 10px;
+  left: 25px;
 }
 
 /* line 101, ../sass/atani.sass */
+.img-circle {
+  height: auto;
+  max-width: 120px;
+}
+
+/* line 105, ../sass/atani.sass */
 .mainPic {
   height: 350px;
 }
 
-/* line 104, ../sass/atani.sass */
+/* line 108, ../sass/atani.sass */
 .backgroundMain {
   background: #f6e6b4;
   background: -moz-linear-gradient(left, #f6e6b4 0%, #ed9017 100%);
@@ -130,22 +136,22 @@ div {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=1 );
 }
 
-/* line 114, ../sass/atani.sass */
+/* line 118, ../sass/atani.sass */
 .advTea {
   background-color: #FFFFCC;
 }
 
-/* line 117, ../sass/atani.sass */
+/* line 121, ../sass/atani.sass */
 .advBigger {
   font-size: 200%;
 }
 
-/* line 121, ../sass/atani.sass */
+/* line 125, ../sass/atani.sass */
 .footer a {
   color: #FFFFCC;
 }
 
-/* line 124, ../sass/atani.sass */
+/* line 128, ../sass/atani.sass */
 .zmarginLF {
   margin-left: 0px;
   margin-right: 0px;

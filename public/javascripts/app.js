@@ -5,6 +5,7 @@
         $scope.banner_url = "images/banner%20Trans.png";
         $scope.parentLogo = "images/vihaba_logo.png";
         $scope.logo_url = "images/Logo.png";
+        $scope.anhBody_url = "images/body.png";
         $scope.menus = [{'name':'Trang chủ','icon':'glyphicon glyphicon-home','href':"/",'css':"active",'id':"mainMenu"},
                         {'name':'giới thiệu','icon':'glyphicon glyphicon-thumbs-up','href':"/",'index':'aboutmatcha','css':'toogleContent'},
                         {'name':'sản phẩm','icon':'glyphicon glyphicon-align-justify','href':"/",'index':"products",'css':'toogleContent'},

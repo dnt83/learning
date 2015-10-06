@@ -15,7 +15,7 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
             .container
                 .navbar-header
                     a.navbar-brand.brand.visible-xs
-                        img.brand-image.img-rounded.img-responsive(ng-src="{{ logo_url }}")
+                        img.brand-image.img-circle.img-responsive(ng-src="{{ logo_url }}")
                     button.navbar-toggle.collapsed(type='button',data-toggle="collapse",data-target="#ataniMenu")
                         span.icon-bar
                         span.icon-bar
@@ -32,8 +32,8 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
                     .banner
                         a(href='/',title='Home')
                             img(class='center-block img-responsive',alt='Banner Image',ng-src="{{ banner_url }}")
-                        .img-responsive.img-rounded.img_overlay
-                            img(ng-src='{{ logo_url }}',alt="Logo")
+                        .img_overlay
+                            img.img-responsive.img-circle(ng-src='{{ logo_url }}',alt="Logo")
                     div
                         h1#site-name(class="text-center text-uppercase")
                             a(href="/",title='Home') matcha tea atani
@@ -45,19 +45,10 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
             .row.backgroundMain.zmarginLF
                 h1.col-md-12.col-xs-12.hide#antanicontent
             .row.backgroundMain.zmarginLF#mainContent
-                .hidden-xs.col-sm-6.col-md-6.col-lg-6
-                    img.img-responsive.mainPic(ng-src="{{ anhcoc_url }}",alt='Anh loi')
-                .col-xs-12.col-sm-6
-                    h2
-                        strong.advBigger Trà Xanh
-                        | &nbsp;và hơn thế nữa
-                    h2.advTea
-                        strong.advBigger.strong 10x
-                        | &nbsp;giá trị dinh dưỡng
-                    h2.advTea
-                        strong.advBigger.strong 137x
-                        | &nbsp;chất chống oxy hóa
-                    h2 so với nước trà pha thường
+                //.hidden-xs.col-sm-6.col-md-6.col-lg-6
+                //    img.img-responsive.mainPic(ng-src="{{ anhcoc_url }}",alt='Anh loi')
+                //.col-xs-12.col-sm-6
+                img.img-responsive(ng-src="{{ anhBody_url }}",alt="Loading Image")
             .row.zmarginLF
                 .col-xs-12.col-md-12.hline
             .row.voffset4
