@@ -54,7 +54,7 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
             .row.voffset4
                 ul
                     li.voffset2.col-xs-12.col-md-6(ng-repeat="note in notes")
-                        i.fa.fa-hand-o-right.btn &nbsp;{{ note }}
+                        i.fa.fa-hand-o-right.btn.note_link &nbsp;{{ note }}
             //.row
             //    ul
             //        li.voffset2.col-xs-12.col-md-6
@@ -68,7 +68,7 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
                         h3.text-center.text-uppercase
                             strong Công ty TNHH thương mại và xuất nhập khẩu vihaba
                     .col-xs-12.col-md-12 Địa chỉ: Số 10 Ngách 91/16 Lương Đình Của, Phương Mai, Đống Đa, Hà Nội
-                    .col-xs-12.col-md-12 Văn phòng giao dịch: Số 167 Nguyễn Ngọc Nại, Thanh Xuân, Hà nội
+                    .col-xs-12.col-md-12 Văn phòng giao dịch: Số 28 Vũ Phạm Hàm, Yên Hòa, Đống Đa, Hà Nội.
                     .col-xs-12.col-md-12 Điện thoại: 0466 730 333 / Hotline: 090 567 1102
                     .col-xs-12.col-md-12
                         | Website:&nbsp;
@@ -77,4 +77,6 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
                         | Email:&nbsp;
                         a(ng-href="mailto:{{ emailHome }}/?subject={{ subject}}") atani@vihaba.vn
                         | &nbsp;/&nbsp;
-                        a.i.fa.fa-facebook-square(ng-href="{{ urlFB }}") &nbsp;{{ urlFB }}
+                        a(ng-href="{{ urlFB }}",target="_blank")
+                            span.fa.fa-facebook-square
+                            span &nbsp;{{ urlFB_name }}

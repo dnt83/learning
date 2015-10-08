@@ -1,6 +1,6 @@
     var atanivnApp = angular.module("atanivn", []);
     atanivnApp.controller('atanimainCtrl', function ($scope) {
-        $scope.title = "Atani Matcha";
+        $scope.title = "Atani Matcha Nhật Bản Nguyên Chất";
         $scope.siteName = "VIHABA";
         $scope.banner_url = "images/banner%20Trans.png";
         $scope.parentLogo = "images/vihaba_logo.png";
@@ -23,7 +23,8 @@
         $scope.urlHome = "http://www.atani.vn";
         $scope.emailHome = "atani@vihaba.vn";
         $scope.subject = "Xin Chao Matcha Atani";
-        $scope.urlFB = "https://www.facebook.com/matchaatani"
+        $scope.urlFB = "https://www.facebook.com/matchaatani";
+        $scope.urlFB_name = "ATANI Trà Xanh Nhật Bản";
     });
 
     $(document).ready(function(){
