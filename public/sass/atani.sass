@@ -1,5 +1,5 @@
 @import "bootstrap.min.css"
-@import "font-awesome.min.css"
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
 
 $fontstyle: italic
 $maincolorback: #b8dd5a
@@ -18,6 +18,12 @@ $voffset1: 4px
 $voffset2: 10px
 $voffset3: 15px
 $voffset4: 20px
+
+@font-face
+  font-family: "VNFQuicksandBook"
+  src: url("fonts/VNFQuicksandBook.ttf") format("truetype")
+  font-family: "UVNMoiHong"
+  src: url("fonts/UVNMoiHong.ttf") format("truetype")
 
 .voffset
   margin-top: $voffset
@@ -128,3 +134,6 @@ div
 .zmarginLF
   margin-left: 0px
   margin-right: 0px
+
+.note_link
+  font-family: VNFQuicksandBook, sans-serif
