@@ -1,3 +1,13 @@
-body(ng-app="atanivn",ng-controller="AppContents")
-  .row.content_background
-    block content
+div(ng-repeat="content in contents")
+    ul
+        li.col-xs-6
+            a(href="{{ content['href'] }}")
+                h3
+                    span.fa.fa-hand-o-right
+                    span &nbsp; {{ content['name'] }}
+div(ng-repeat="content1 in contents")
+    a.detailContent.col-xs-12(name="{{ content1['id'] }}")
+        h3
+            span.fa.fa-hand-o-right
+            span &nbsp; {{ content1['name'] }}
+        p {{ content1['content'] }}

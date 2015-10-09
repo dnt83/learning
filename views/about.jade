@@ -1,8 +1,27 @@
 //
    Created by dnt on 9/24/15.
-extends contentlayout
-
-block content
-   div(ng-repeat ="product in abouts")
-      h1.col-md-12 {{ 2 +2 }}
-      h1 {{ product['name'] }}
+.row.content_header
+   ul.text-capitalize
+      li.col-sm-12.col-md-6.voffset2
+         a(href="#about#matchalagi")
+            span.glyphicon.glyphicon-chevron-right
+            span &nbsp;Matcha Là Gì
+      li.col-sm-12.col-md-6.voffset2
+         a(href="#sanxuatmatcha")
+            span.glyphicon.glyphicon-chevron-right
+            span &nbsp;Sản xuất matcha
+      li.col-sm-12.col-md-6.voffset2
+         a(href="#congdungmatcha")
+            span.glyphicon.glyphicon-chevron-right
+            span &nbsp;Công dụng thần kỳ của Matcha
+      li.col-sm-12.col-md-6.voffset2
+         a(href="#sudungmatcha")
+            span.glyphicon.glyphicon-chevron-right
+            span &nbsp;Sử dụng Matcha 2
+.row.detailContent
+   h3.col-lg-12
+      a(name="matchalagi")
+         span.glyphicon.glyphicon-chevron-right
+         span &nbsp;Matcha Là Gì
+   .col-lg-12.hline_content
+   p.col-lg-12 Matcha (抹茶, phiên âm tiếng Hán: mạt trà) là sản phẩm đặc trưng của văn hóa trà đạo Nhật Bản từ thế kỉ 12. Trà đạo Nhật Bản truyền thống vốn xoay quanh các hoạt động pha trà và thưởng thức matcha, lồng ghép vào đó các giá trị tinh thần và văn hóa. Sau hàng trăm năm thực hành văn hóa trà đạo, matcha hiện nay đã vươn ra khỏi nước Nhật, không chỉ là một loại đồ uống cổ truyền, mà còn là thức nguyên liệu đặc biệt trong ẩm thực lẫn trong thẩm mĩ, với màu sắc và hương vị đặc biệt, cùng những giá trị vàng cho sức khỏe.

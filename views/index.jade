@@ -6,6 +6,8 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
         meta(name="Description",content="Atani Matcha Nhật Bản Nguyên Chất")
         meta(name="Keywords",content="Atani Matcha Nhật Bản Nguyên Chất VIHABA")
         script(type='text/javascript',src="javascripts/angular.min.js")
+        script(typ="text/javascript",src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js")
+
         script(type="text/javascript",src="javascripts/jquery.min.js")
         script(type="text/javascript",src="javascripts/bootstrap.min.js")
         script(type="text/javascript",src="javascripts/app.js")
@@ -19,45 +21,28 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
                 .navbar-header
                     a.navbar-brand.brand.visible-xs
                         img.brand-image.img-circle.img-responsive(ng-src="{{ logo_url }}")
-                    button.navbar-toggle.collapsed(type='button',data-toggle="collapse",data-target="#ataniMenu")
+                    button.navbar-toggle.collapsed(type='button',data-toggle="collapse")
                         span.icon-bar
                         span.icon-bar
                         span.icon-bar
                 .collapse.navbar-collapse#ataniMenu
                     ul.nav.navbar-nav.text-uppercase.nav-tabs.nav-justified
-                        li(ng-repeat="mnu in menus",class="{{ mnu['css'] }}",id="{{ mnu['id']}}")
-                            a.btn.toogleConent(data-target="antanicontent",data-value= "{{ mnu['index'] }}")
+                        li.toogleConent(ng-repeat="mnu in menus",class="{{ mnu['css'] }}",id="{{ mnu['id']}}")
+                            a.btn(ng-href="{{ mnu['href'] }}")
                                 span(class="{{ mnu['icon'] }}")
                                 | &nbsp;{{ mnu['name'] }}
         .container
             .row
                 .col-md-12.col-xs-12
-                    a(href='/',title='Home')
+                    a(href='#/',title='Home')
                         img(class='center-block img-responsive',alt='Banner Image',ng-src="{{ banner_url }}")
-                    //.img_overlay
-                        //    img.img-responsive.img-circle(ng-src='{{ logo_url }}',alt="Logo")
-                    //div
-                    //    h1#site-name(class="text-center text-uppercase")
-                    //        a(href="/",title='Home') matcha tea atani
-                    //div
-                    //    h2#slogan(class="text-center text-uppercase")
-                    //        a(href="/",title="Home") matcha tea atani @ Slogan
-            .row#hlinef.zmarginLF
-                .col-xs-12.col-lg-12.hline
-            .row.backgroundMain.zmarginLF
-                h1.col-md-12.col-xs-12.hide#antanicontent
-            .row.backgroundMain.zmarginLF#mainContent
-                //.hidden-xs.col-sm-6.col-md-6.col-lg-6
-                //    img.img-responsive.mainPic(ng-src="{{ anhcoc_url }}",alt='Anh loi')
-                //.col-xs-12.col-sm-6
-                img.img-responsive(ng-src="{{ anhBody_url }}",alt="Loading Image")
-            .row.zmarginLF
-                .col-xs-12.col-md-12.hline
-            .row.voffset4
-                ul
-                    li.voffset2.col-xs-12.col-md-6.text-left(ng-repeat="note in notes")
-                        span.fa.fa-hand-o-right
-                        span.note_link &nbsp;{{ note }}
+            .main
+                div(ng-view)
+            //.row.voffset4
+            //    ul
+            //        li.voffset2.col-xs-12.col-md-6.text-left(ng-repeat="note in notes")
+            //            span.fa.fa-hand-o-right
+            //            span.note_link &nbsp;{{ note }}
             //.row
             //    ul
             //        li.voffset2.col-xs-12.col-md-6
