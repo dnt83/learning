@@ -168,35 +168,29 @@ div {
 }
 
 /* line 145, ../sass/atani.sass */
-.detailContent {
-  font-family: VNFQuicksandBook, sans-serif;
-  font-size: 18px;
-}
-
-/* line 149, ../sass/atani.sass */
 .note_link {
   font-family: VNFQuicksandBook, sans-serif;
 }
 
-/* line 152, ../sass/atani.sass */
+/* line 148, ../sass/atani.sass */
 .content_header {
   background-color: #c1cb80;
   font-size: 15px;
   font-family: VNFQuicksandBook, sans-serif;
   font-color: white;
 }
-/* line 157, ../sass/atani.sass */
+/* line 153, ../sass/atani.sass */
 .content_header a {
   color: white;
 }
 
-/* line 160, ../sass/atani.sass */
+/* line 156, ../sass/atani.sass */
 .hline_content {
   background-color: #006600;
   height: 2px;
 }
 
-/* line 164, ../sass/atani.sass */
+/* line 160, ../sass/atani.sass */
 .detailContent {
   font-family: VNFQuicksandBook;
   font-size: 18px;
