@@ -7,7 +7,7 @@
         $scope.logo_url = "images/Logo.png";
         $scope.anhBody_url = "images/body.png";
         $scope.menus = [{'name':'Trang chủ','icon':'glyphicon glyphicon-home','href':"/",'css':"active",'id':"mainMenu"},
-                        {'name':'giới thiệu','icon':'glyphicon glyphicon-thumbs-up','href':"/",'index':'aboutmatcha','css':'toogleContent'},
+                        {'name':'giới thiệu','icon':'glyphicon glyphicon-thumbs-up','href':"/",'index':'about','css':'toogleContent'},
                         {'name':'sản phẩm','icon':'glyphicon glyphicon-align-justify','href':"/",'index':"products",'css':'toogleContent'},
                         {'name':"thông tin",'icon':'glyphicon glyphicon-info-sign','href':"/"},
                         {'name':"mua hàng",'icon':'glyphicon glyphicon-question-sign','href':"/"},
@@ -26,6 +26,18 @@
         $scope.urlFB = "https://www.facebook.com/matchaatani";
         $scope.urlFB_name = "ATANI Trà Xanh Nhật Bản";
     });
+
+    atanivnApp.controller('AppContents', function ($scope) {
+        $scope.title = "Atani Matcha Nhật Bản Nguyên Chất";
+        $scope.abouts = [{'name':'Trang chủ','icon':'glyphicon glyphicon-home','href':"/",'css':"active",'id':"mainMenu"},
+            {'name':'giới thiệu','icon':'glyphicon glyphicon-thumbs-up','href':"/",'index':'aboutmatcha','css':'toogleContent'},
+            {'name':'sản phẩm','icon':'glyphicon glyphicon-align-justify','href':"/",'index':"products",'css':'toogleContent'},
+            {'name':"thông tin",'icon':'glyphicon glyphicon-info-sign','href':"/"},
+            {'name':"mua hàng",'icon':'glyphicon glyphicon-question-sign','href':"/"},
+            {'name':"liên hệ",'icon':'glyphicon glyphicon-earphone','href':"/"}
+        ];
+    });
+
 
     $(document).ready(function(){
         $(document).click(function(){
@@ -54,7 +66,7 @@
 
             if (strFileName != ".html")
                 $.ajax({
-                    url : "contents/" + strFileName,
+                    url : strFileName,
                     dataType: "text",
                     success : function (data) {
                         $(target).html(data);
