@@ -2,7 +2,7 @@
     atanivnApp.controller('atanimainCtrl', function ($scope) {
         $scope.title = "Atani Matcha Nhật Bản Nguyên Chất";
         $scope.siteName = "VIHABA";
-        $scope.banner_url = "images/banner%20Trans.png";
+        $scope.banner_url = "images/Banner.png";
         $scope.parentLogo = "images/vihaba_logo.png";
         $scope.logo_url = "images/Logo.png";
         $scope.anhBody_url = "images/body.png";

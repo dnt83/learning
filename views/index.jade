@@ -32,17 +32,16 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
         .container
             .row
                 .col-md-12.col-xs-12
-                    .banner
-                        a(href='/',title='Home')
-                            img(class='center-block img-responsive',alt='Banner Image',ng-src="{{ banner_url }}")
-                        .img_overlay
-                            img.img-responsive.img-circle(ng-src='{{ logo_url }}',alt="Logo")
-                    div
-                        h1#site-name(class="text-center text-uppercase")
-                            a(href="/",title='Home') matcha tea atani
-                    div
-                        h2#slogan(class="text-center text-uppercase")
-                            a(href="/",title="Home") matcha tea atani @ Slogan
+                    a(href='/',title='Home')
+                        img(class='center-block img-responsive',alt='Banner Image',ng-src="{{ banner_url }}")
+                    //.img_overlay
+                        //    img.img-responsive.img-circle(ng-src='{{ logo_url }}',alt="Logo")
+                    //div
+                    //    h1#site-name(class="text-center text-uppercase")
+                    //        a(href="/",title='Home') matcha tea atani
+                    //div
+                    //    h2#slogan(class="text-center text-uppercase")
+                    //        a(href="/",title="Home") matcha tea atani @ Slogan
             .row#hlinef.zmarginLF
                 .col-xs-12.col-lg-12.hline
             .row.backgroundMain.zmarginLF
@@ -56,9 +55,9 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
                 .col-xs-12.col-md-12.hline
             .row.voffset4
                 ul
-                    li.btn.voffset2.col-xs-12.col-md-6(ng-repeat="note in notes")
+                    li.voffset2.col-xs-12.col-md-6.text-left(ng-repeat="note in notes")
                         span.fa.fa-hand-o-right
-                        span.note_link {{ note }}
+                        span.note_link &nbsp;{{ note }}
             //.row
             //    ul
             //        li.voffset2.col-xs-12.col-md-6
