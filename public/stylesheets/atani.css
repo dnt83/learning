@@ -2,99 +2,97 @@
 @font-face {
   font-family: "VNFQuicksandBook";
   src: url("fonts/VNFQuicksandBook.ttf") format("truetype");
-  font-family: "UVNMoiHong";
-  src: url("fonts/UVNMoiHong.ttf") format("truetype");
 }
-/* line 32, ../sass/atani.sass */
+/* line 31, ../sass/atani.sass */
 .voffset {
   margin-top: 2px;
 }
 
-/* line 35, ../sass/atani.sass */
+/* line 34, ../sass/atani.sass */
 .voffset1 {
   margin-top: 4px;
 }
 
-/* line 38, ../sass/atani.sass */
+/* line 37, ../sass/atani.sass */
 .voffset2 {
   margin-top: 10px;
 }
 
-/* line 41, ../sass/atani.sass */
+/* line 40, ../sass/atani.sass */
 .voffset3 {
   margin-top: 15px;
 }
 
-/* line 44, ../sass/atani.sass */
+/* line 43, ../sass/atani.sass */
 .voffset4 {
   margin-top: 20px;
 }
 
-/* line 47, ../sass/atani.sass */
+/* line 46, ../sass/atani.sass */
 .brand-image {
   max-height: 48px;
   margin-top: -14px;
   border-radius: 20px;
 }
 
-/* line 52, ../sass/atani.sass */
+/* line 51, ../sass/atani.sass */
 body {
   padding-top: 60px;
 }
 
-/* line 55, ../sass/atani.sass */
+/* line 54, ../sass/atani.sass */
 .footer {
   padding-top: 25px;
 }
 
-/* line 58, ../sass/atani.sass */
+/* line 57, ../sass/atani.sass */
 .footer div {
   background-color: #1d9531;
   color: white;
 }
 
-/* line 62, ../sass/atani.sass */
+/* line 61, ../sass/atani.sass */
 ul {
   list-style-type: none;
 }
 
-/* line 65, ../sass/atani.sass */
+/* line 64, ../sass/atani.sass */
 .hline {
   background-color: #b8dd5a;
   height: 5px;
 }
 
-/* line 69, ../sass/atani.sass */
+/* line 68, ../sass/atani.sass */
 .banner {
   background-color: #b8dd5a;
 }
 
-/* line 72, ../sass/atani.sass */
+/* line 71, ../sass/atani.sass */
 .content_background {
   background-color: #c1cb80;
 }
 
-/* line 75, ../sass/atani.sass */
+/* line 74, ../sass/atani.sass */
 div {
   color: #1d9531;
 }
 
-/* line 78, ../sass/atani.sass */
+/* line 77, ../sass/atani.sass */
 #mainmenu {
   background-color: #1d9531;
 }
-/* line 82, ../sass/atani.sass */
+/* line 81, ../sass/atani.sass */
 #mainmenu ul li:not(.active) a {
   color: white;
 }
 
-/* line 86, ../sass/atani.sass */
+/* line 85, ../sass/atani.sass */
 .navbar-default .navbar-brand {
   font-weight: 700;
   color: white !important;
 }
 
-/* line 90, ../sass/atani.sass */
+/* line 89, ../sass/atani.sass */
 #site-name a {
   position: absolute;
   top: 10px;
@@ -106,7 +104,7 @@ div {
   color: white;
 }
 
-/* line 101, ../sass/atani.sass */
+/* line 100, ../sass/atani.sass */
 #slogan a {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -116,25 +114,25 @@ div {
   left: 180px;
 }
 
-/* line 109, ../sass/atani.sass */
+/* line 108, ../sass/atani.sass */
 .img_overlay {
   position: absolute;
   top: 10px;
   left: 25px;
 }
 
-/* line 114, ../sass/atani.sass */
+/* line 113, ../sass/atani.sass */
 .img-circle {
   height: auto;
   max-width: 120px;
 }
 
-/* line 118, ../sass/atani.sass */
+/* line 117, ../sass/atani.sass */
 .mainPic {
   height: 350px;
 }
 
-/* line 121, ../sass/atani.sass */
+/* line 120, ../sass/atani.sass */
 .backgroundMain {
   background: #f6e6b4;
   background: -moz-linear-gradient(left, #f6e6b4 0%, #ed9017 100%);
@@ -146,51 +144,51 @@ div {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=1 );
 }
 
-/* line 131, ../sass/atani.sass */
+/* line 130, ../sass/atani.sass */
 .advTea {
   background-color: #FFFFCC;
 }
 
-/* line 134, ../sass/atani.sass */
+/* line 133, ../sass/atani.sass */
 .advBigger {
   font-size: 200%;
 }
 
-/* line 138, ../sass/atani.sass */
+/* line 137, ../sass/atani.sass */
 .footer a {
   color: #FFFFCC;
 }
 
-/* line 141, ../sass/atani.sass */
+/* line 140, ../sass/atani.sass */
 .zmarginLF {
   padding-left: 0px;
   padding-right: 0px;
 }
 
-/* line 145, ../sass/atani.sass */
+/* line 144, ../sass/atani.sass */
 .note_link {
   font-family: VNFQuicksandBook, sans-serif;
 }
 
-/* line 148, ../sass/atani.sass */
+/* line 147, ../sass/atani.sass */
 .content_header {
   background-color: #c1cb80;
   font-size: 15px;
   font-family: VNFQuicksandBook, sans-serif;
   font-color: white;
 }
-/* line 153, ../sass/atani.sass */
+/* line 152, ../sass/atani.sass */
 .content_header a {
   color: white;
 }
 
-/* line 156, ../sass/atani.sass */
+/* line 155, ../sass/atani.sass */
 .hline_content {
   background-color: #006600;
   height: 2px;
 }
 
-/* line 160, ../sass/atani.sass */
+/* line 159, ../sass/atani.sass */
 .detailContent {
   font-family: VNFQuicksandBook;
   font-size: 18px;
