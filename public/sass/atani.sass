@@ -1,4 +1,5 @@
 @import "bootstrap.min.css"
+@import "star-rating.min.sass"
 
 $fontstyle: italic
 $maincolorback: #b8dd5a
@@ -22,6 +23,13 @@ $voffset1: 4px
 $voffset2: 10px
 $voffset3: 15px
 $voffset4: 20px
+
+//This one for V line Table
+$VBorderCurved: solid $contentBackColor 3px
+$VBorderCurved2: solid $contentBackColor 3px
+
+//This one for h line Table
+$HBorderCurved: solid $contentBackColor 1px
 
 @font-face
   font-family: "VNFQuicksandBook"
@@ -163,3 +171,48 @@ div
   font-size: $detailContentFontSize
   font-color: $contentBackColor
   background-color: white
+
+
+table
+  tr, thead
+    th, td
+      text-align: center
+
+.table-curved
+  border-collapse: separate
+  border: $HBorderCurved
+  border-radius: 6px
+  border-left: 0px
+  border-top: 0px
+
+//Table header
+.table-curved > thead:first-child > tr:first-child > th
+  border-bottom: 0px
+  border-top: $VBorderCurved
+  border-bottom: $VBorderCurved2
+
+.table-curved
+  td, th
+    border-left: $HBorderCurved
+    border-top: $HBorderCurved
+    img
+      max-height: 50px
+  td:first-child, th:first-child
+    border-left: $VBorderCurved
+  td:last-child, th:last-child
+    border-right: $VBorderCurved
+  tr:last-child > td
+    border-bottom: $VBorderCurved2
+
+
+.table-curved > :first-child > :first-child > :first-child
+  border-radius: 6px 0 0 0
+
+.table-curved > :first-child > :first-child > :last-child
+  border-radius: 0 6px 0 0
+
+.table-curved > :last-child > :last-child > :first-child
+  border-radius: 0 0 0 6px
+
+.table-curved > :last-child > :last-child > :last-child
+  border-radius: 0 0 6px 0

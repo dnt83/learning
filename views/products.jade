@@ -1,3 +1,31 @@
-//
-   Created by dnt on 9/24/15.
-extends contentlayout
+.panel
+   .panel-heading
+      .text-center.panel-title So sánh các sản phẩm Matcha Atani
+   table.table.table-hover.table-curved
+      thead.thead
+         th.th
+            img.center-block.img-responsive.img-rounded(src="images/logo.png")
+         th.th Màu Sắc
+         th.th Độ giàu dinh dưỡng
+         th.th Mùi thơm trà xanh
+         th.th Vị Đắng
+      tr.tr
+         td.td Matcha 01
+         td.td Xanh
+         td.td
+            input.rating#rating-system(type="number",min='0',max='5',step='0.5',data-size='lg')
+         td.td 04 Sao
+         td.td 03 sao
+      tr.tr
+         td.td Matcha 02
+         td.td Xanh dam hon
+         td.td 02 Sao
+         td.td 04 Sao
+         td.td 03.5 sao
+      tr.tr
+         td.td Matcha 03
+         td.td Xanh dam hon nua
+         td.td 1.5 Sao
+         td.td 3.5 Sao
+         td.td 4 sao
+  
