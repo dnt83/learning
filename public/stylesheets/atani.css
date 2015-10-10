@@ -1,337 +1,104 @@
 @import url(bootstrap.min.css);
-/*!
- * @copyright &copy; Kartik Visweswaran, Krajee.com, 2013 - 2015
- * @version 3.5.4
- *
- * A simple yet powerful JQuery star rating plugin that allows rendering
- * fractional star ratings and supports Right to Left (RTL) input.
- *
- * For more JQuery/Bootstrap plugins and demos visit http://plugins.krajee.com
- * For more Yii related demos visit http://demos.krajee.com */
-/* line 11, ../sass/star-rating.min.sass */
-.rating-fa {
-  padding-left: 1px;
-}
-/* line 13, ../sass/star-rating.min.sass */
-.rating-fa .rating-stars:before {
-  padding-left: 1px;
-}
-
-/* line 17, ../sass/star-rating.min.sass */
-.rating-container-rtl .rating-stars:before, .rating-container-rtl:before {
-  content: attr(data-content);
-}
-
-/* line 20, ../sass/star-rating.min.sass */
-.rating-container {
-  display: inline-block;
-  vertical-align: middle;
-}
-/* line 21, ../sass/star-rating.min.sass */
-.rating-container:before {
-  content: attr(data-content);
-}
-
-/* line 26, ../sass/star-rating.min.sass */
-.rating-container-rtl {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* line 30, ../sass/star-rating.min.sass */
-.star-rating .clear-rating, .star-rating-rtl .caption {
-  padding-right: 5px;
-}
-
-/* line 33, ../sass/star-rating.min.sass */
-.rating-loading {
-  width: 25px;
-  height: 25px;
-  font-size: 0;
-  color: #fff;
-  background: url(../img/loading.gif) top left no-repeat;
-  border: none;
-}
-
-/* line 41, ../sass/star-rating.min.sass */
-.rating-fa {
-  font-family: FontAwesome;
-}
-
-/* line 44, ../sass/star-rating.min.sass */
-.rating-gly {
-  font-family: "Glyphicons Halflings";
-}
-
-/* line 47, ../sass/star-rating.min.sass */
-.rating-gly-star {
-  font-family: "Glyphicons Halflings";
-  padding-left: 2px;
-}
-/* line 50, ../sass/star-rating.min.sass */
-.rating-gly-star .rating-stars:before {
-  padding-left: 2px;
-}
-
-/* line 53, ../sass/star-rating.min.sass */
-.rating-lg .rating-gly-star {
-  padding-left: 4px;
-}
-/* line 55, ../sass/star-rating.min.sass */
-.rating-lg .rating-gly-star .rating-stars:before {
-  padding-left: 4px;
-}
-
-/* line 58, ../sass/star-rating.min.sass */
-.rating-xl .rating-gly-star {
-  padding-left: 2px;
-}
-/* line 60, ../sass/star-rating.min.sass */
-.rating-xl .rating-gly-star .rating-stars:before {
-  padding-left: 2px;
-}
-
-/* line 63, ../sass/star-rating.min.sass */
-.rating-active {
-  cursor: default;
-}
-
-/* line 66, ../sass/star-rating.min.sass */
-.rating-disabled {
-  cursor: not-allowed;
-}
-
-/* line 69, ../sass/star-rating.min.sass */
-.rating-uni {
-  font-size: 1.2em;
-  margin-top: -5px;
-}
-
-/* line 73, ../sass/star-rating.min.sass */
-.rating-container {
-  position: relative;
-  color: #e3e3e3;
-  overflow: hidden;
-}
-/* line 77, ../sass/star-rating.min.sass */
-.rating-container .rating-stars {
-  position: absolute;
-  left: 0;
-  top: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  color: #fde16d;
-  transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
-  -webkit-transition: all 0.25s ease-out;
-}
-/* line 88, ../sass/star-rating.min.sass */
-.rating-container .rating-stars:before {
-  content: attr(data-content);
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
-}
-
-/* line 92, ../sass/star-rating.min.sass */
-.rating-container-rtl {
-  position: relative;
-  overflow: hidden;
-  color: #fde16d;
-}
-/* line 96, ../sass/star-rating.min.sass */
-.rating-container-rtl:before {
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
-}
-/* line 98, ../sass/star-rating.min.sass */
-.rating-container-rtl .rating-stars {
-  position: absolute;
-  left: 0;
-  top: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  color: #e3e3e3;
-  transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
-  -webkit-transition: all 0.25s ease-out;
-}
-
-/* line 110, ../sass/star-rating.min.sass */
-.rating-xl {
-  font-size: 4.89em;
-}
-
-/* line 113, ../sass/star-rating.min.sass */
-.rating-lg {
-  font-size: 3.91em;
-}
-
-/* line 116, ../sass/star-rating.min.sass */
-.rating-md {
-  font-size: 3.13em;
-}
-
-/* line 119, ../sass/star-rating.min.sass */
-.rating-sm {
-  font-size: 2.5em;
-}
-
-/* line 122, ../sass/star-rating.min.sass */
-.rating-xs {
-  font-size: 2em;
-}
-
-/* line 125, ../sass/star-rating.min.sass */
-.star-rating .clear-rating, .star-rating-rtl .clear-rating {
-  color: #aaa;
-  cursor: not-allowed;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 60%;
-}
-
-/* line 132, ../sass/star-rating.min.sass */
-.clear-rating-active {
-  cursor: pointer !important;
-}
-/* line 134, ../sass/star-rating.min.sass */
-.clear-rating-active:hover {
-  color: #843534;
-}
-
-/* line 137, ../sass/star-rating.min.sass */
-.star-rating .caption, .star-rating-rtl .caption {
-  color: #999;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 55%;
-}
-
-/* line 143, ../sass/star-rating.min.sass */
-.star-rating .caption {
-  padding-left: 5px;
-}
-
-@media print {
-  /* line 147, ../sass/star-rating.min.sass */
-  .rating-container {
-    color: #f3f3f3 !important;
-  }
-
-  /* line 149, ../sass/star-rating.min.sass */
-  .rating-container-rtl .rating-stars {
-    color: #f3f3f3 !important;
-  }
-  /* line 151, ../sass/star-rating.min.sass */
-  .rating-container-rtl .rating-stars:before {
-    color: #f3f3f3 !important;
-  }
-
-  /* line 153, ../sass/star-rating.min.sass */
-  .rating-container:before {
-    color: #f3f3f3 !important;
-  }
-
-  /* line 155, ../sass/star-rating.min.sass */
-  .star-rating .clear-rating, .star-rating-rtl .clear-rating {
-    display: none;
-  }
-}
+@import url(star-rating.min.css);
 @font-face {
   font-family: "VNFQuicksandBook";
-  src: url("fonts/VNFQuicksandBook.ttf") format("truetype");
+  src: url("../fonts/VNFQuicksandBook.ttf") format("truetype");
 }
-/* line 39, ../sass/atani.sass */
+@font-face {
+  font-family: "UVHMoiHong";
+  src: url("../fonts/UVNMoiHong.ttf") format("truetype");
+}
+/* line 42, ../sass/atani.sass */
 .voffset {
   margin-top: 2px;
 }
 
-/* line 42, ../sass/atani.sass */
+/* line 45, ../sass/atani.sass */
 .voffset1 {
   margin-top: 4px;
 }
 
-/* line 45, ../sass/atani.sass */
+/* line 48, ../sass/atani.sass */
 .voffset2 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 49, ../sass/atani.sass */
+/* line 52, ../sass/atani.sass */
 .voffset3 {
   margin-top: 15px;
 }
 
-/* line 52, ../sass/atani.sass */
+/* line 55, ../sass/atani.sass */
 .voffset4 {
   margin-top: 20px;
 }
 
-/* line 56, ../sass/atani.sass */
+/* line 59, ../sass/atani.sass */
 .brand-image {
   max-height: 48px;
   margin-top: -14px;
   border-radius: 20px;
 }
 
-/* line 61, ../sass/atani.sass */
+/* line 64, ../sass/atani.sass */
 body {
   padding-top: 60px;
 }
 
-/* line 64, ../sass/atani.sass */
+/* line 67, ../sass/atani.sass */
 .footer {
   padding-top: 25px;
 }
 
-/* line 67, ../sass/atani.sass */
+/* line 70, ../sass/atani.sass */
 .footer div {
   background-color: #1d9531;
   color: white;
 }
 
-/* line 71, ../sass/atani.sass */
+/* line 74, ../sass/atani.sass */
 ul {
   list-style-type: none;
 }
 
-/* line 74, ../sass/atani.sass */
+/* line 77, ../sass/atani.sass */
 .hline {
   background-color: #b8dd5a;
   height: 5px;
 }
 
-/* line 78, ../sass/atani.sass */
+/* line 81, ../sass/atani.sass */
 .banner {
   background-color: #b8dd5a;
 }
 
-/* line 81, ../sass/atani.sass */
+/* line 84, ../sass/atani.sass */
 .content_background {
   background-color: #c1cb80;
 }
 
-/* line 84, ../sass/atani.sass */
+/* line 87, ../sass/atani.sass */
 div {
   color: #1d9531;
 }
 
-/* line 87, ../sass/atani.sass */
+/* line 90, ../sass/atani.sass */
 #mainmenu {
   background-color: #1d9531;
 }
-/* line 91, ../sass/atani.sass */
+/* line 94, ../sass/atani.sass */
 #mainmenu ul li:not(.active) a {
   color: white;
 }
 
-/* line 95, ../sass/atani.sass */
+/* line 98, ../sass/atani.sass */
 .navbar-default .navbar-brand {
   font-weight: 700;
   color: white !important;
 }
 
-/* line 99, ../sass/atani.sass */
+/* line 102, ../sass/atani.sass */
 #site-name a {
   position: absolute;
   top: 10px;
@@ -343,7 +110,7 @@ div {
   color: white;
 }
 
-/* line 110, ../sass/atani.sass */
+/* line 113, ../sass/atani.sass */
 #slogan a {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -353,25 +120,25 @@ div {
   left: 180px;
 }
 
-/* line 118, ../sass/atani.sass */
+/* line 121, ../sass/atani.sass */
 .img_overlay {
   position: absolute;
   top: 10px;
   left: 25px;
 }
 
-/* line 123, ../sass/atani.sass */
+/* line 126, ../sass/atani.sass */
 .img-circle {
   height: auto;
   max-width: 120px;
 }
 
-/* line 127, ../sass/atani.sass */
+/* line 130, ../sass/atani.sass */
 .mainPic {
   height: 350px;
 }
 
-/* line 130, ../sass/atani.sass */
+/* line 133, ../sass/atani.sass */
 .backgroundMain {
   background: #f6e6b4;
   background: -moz-linear-gradient(left, #f6e6b4 0%, #ed9017 100%);
@@ -383,51 +150,51 @@ div {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=1 );
 }
 
-/* line 140, ../sass/atani.sass */
+/* line 143, ../sass/atani.sass */
 .advTea {
   background-color: #FFFFCC;
 }
 
-/* line 143, ../sass/atani.sass */
+/* line 146, ../sass/atani.sass */
 .advBigger {
   font-size: 200%;
 }
 
-/* line 147, ../sass/atani.sass */
+/* line 150, ../sass/atani.sass */
 .footer a {
   color: #FFFFCC;
 }
 
-/* line 150, ../sass/atani.sass */
+/* line 153, ../sass/atani.sass */
 .zmarginLF {
   padding-left: 0px;
   padding-right: 0px;
 }
 
-/* line 154, ../sass/atani.sass */
+/* line 157, ../sass/atani.sass */
 .note_link {
   font-family: VNFQuicksandBook, sans-serif;
 }
 
-/* line 157, ../sass/atani.sass */
+/* line 160, ../sass/atani.sass */
 .content_header {
   background-color: #1d9531;
   font-size: 15px;
   font-family: VNFQuicksandBook, sans-serif;
   font-color: white;
 }
-/* line 162, ../sass/atani.sass */
+/* line 165, ../sass/atani.sass */
 .content_header a {
   color: white;
 }
 
-/* line 165, ../sass/atani.sass */
+/* line 168, ../sass/atani.sass */
 .hline_content {
   background-color: #006600;
   height: 2px;
 }
 
-/* line 169, ../sass/atani.sass */
+/* line 172, ../sass/atani.sass */
 .detailContent {
   font-family: VNFQuicksandBook;
   font-size: 18px;
@@ -435,12 +202,12 @@ div {
   background-color: white;
 }
 
-/* line 178, ../sass/atani.sass */
+/* line 181, ../sass/atani.sass */
 table tr th, table tr td, table thead th, table thead td {
   text-align: center;
 }
 
-/* line 181, ../sass/atani.sass */
+/* line 184, ../sass/atani.sass */
 .table-curved {
   border-collapse: separate;
   border: solid #c1cb80 1px;
@@ -449,51 +216,103 @@ table tr th, table tr td, table thead th, table thead td {
   border-top: 0px;
 }
 
-/* line 189, ../sass/atani.sass */
+/* line 192, ../sass/atani.sass */
 .table-curved > thead:first-child > tr:first-child > th {
   border-bottom: 0px;
   border-top: solid #c1cb80 3px;
   border-bottom: solid #c1cb80 3px;
 }
 
-/* line 195, ../sass/atani.sass */
+/* line 198, ../sass/atani.sass */
 .table-curved td, .table-curved th {
   border-left: solid #c1cb80 1px;
   border-top: solid #c1cb80 1px;
 }
-/* line 198, ../sass/atani.sass */
+/* line 201, ../sass/atani.sass */
 .table-curved td img, .table-curved th img {
   max-height: 50px;
 }
-/* line 200, ../sass/atani.sass */
+/* line 203, ../sass/atani.sass */
 .table-curved td:first-child, .table-curved th:first-child {
   border-left: solid #c1cb80 3px;
 }
-/* line 202, ../sass/atani.sass */
+/* line 205, ../sass/atani.sass */
 .table-curved td:last-child, .table-curved th:last-child {
   border-right: solid #c1cb80 3px;
 }
-/* line 204, ../sass/atani.sass */
+/* line 207, ../sass/atani.sass */
 .table-curved tr:last-child > td {
   border-bottom: solid #c1cb80 3px;
 }
 
-/* line 208, ../sass/atani.sass */
+/* line 211, ../sass/atani.sass */
 .table-curved > :first-child > :first-child > :first-child {
   border-radius: 6px 0 0 0;
 }
 
-/* line 211, ../sass/atani.sass */
+/* line 214, ../sass/atani.sass */
 .table-curved > :first-child > :first-child > :last-child {
   border-radius: 0 6px 0 0;
 }
 
-/* line 214, ../sass/atani.sass */
+/* line 217, ../sass/atani.sass */
 .table-curved > :last-child > :last-child > :first-child {
   border-radius: 0 0 0 6px;
 }
 
-/* line 217, ../sass/atani.sass */
+/* line 220, ../sass/atani.sass */
 .table-curved > :last-child > :last-child > :last-child {
   border-radius: 0 0 6px 0;
+}
+
+/* line 224, ../sass/atani.sass */
+.table-curved td, .table-curved th {
+  vertical-align: middle !important;
+}
+
+/* line 227, ../sass/atani.sass */
+.text-matcha-name {
+  font-family: UVHMoiHong;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+/* line 232, ../sass/atani.sass */
+.compareTable {
+  background-color: #fff2d2;
+  width: 80%;
+}
+
+/* line 237, ../sass/atani.sass */
+td .productMatchaCircle {
+  font-size: 3em;
+  padding: 0 0 0 0;
+}
+
+/* line 245, ../sass/atani.sass */
+.productMatcha01 {
+  color: #8ec623;
+  font-color: #8ec623;
+}
+
+/* line 249, ../sass/atani.sass */
+.productMatcha02 {
+  color: #88a807;
+  font-color: #88a807;
+}
+
+/* line 253, ../sass/atani.sass */
+.productMatcha03 {
+  color: #96a701;
+  font-color: #96a701;
+}
+
+/* line 257, ../sass/atani.sass */
+.rating-xs {
+  font-size: 1.5em;
+}
+
+/* line 260, ../sass/atani.sass */
+.textBold {
+  font-weight: bolder;
 }

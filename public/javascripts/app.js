@@ -55,10 +55,7 @@
     });
 
     atanivnApp.controller('productsController', function ($scope) {
-        $scope.contents = ["Matcha là gì", "Điều gì làm nên khác biệt giữa các loại matcha",
-                            "Matcha khác gì với trả xanh?", "Matcha của Atani là loại matcha nào",
-                            "Vì sao nên sử dụng matcha","Tôi nên chọn loại matcha nào",
-                            "Sử dụng matcha như thế nào","Hướng dẫn mua hàng"];
+        $(".rating-system").rating({min: 0, max: 5,step: 0.5, showClear: false, showCaption: false, readonly: 1, hoverChangeCaption: false});
     });
 
     atanivnApp.controller('aboutController', function ($scope) {
@@ -79,4 +76,5 @@
             $(".active").removeClass('active');
             $(this).parent().addClass('active');
         });
+
     });

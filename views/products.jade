@@ -1,31 +1,86 @@
-.panel
-   .panel-heading
-      .text-center.panel-title So sánh các sản phẩm Matcha Atani
-   table.table.table-hover.table-curved
-      thead.thead
-         th.th
-            img.center-block.img-responsive.img-rounded(src="images/logo.png")
-         th.th Màu Sắc
-         th.th Độ giàu dinh dưỡng
-         th.th Mùi thơm trà xanh
-         th.th Vị Đắng
-      tr.tr
-         td.td Matcha 01
-         td.td Xanh
-         td.td
-            input.rating#rating-system(type="number",min='0',max='5',step='0.5',data-size='lg')
-         td.td 04 Sao
-         td.td 03 sao
-      tr.tr
-         td.td Matcha 02
-         td.td Xanh dam hon
-         td.td 02 Sao
-         td.td 04 Sao
-         td.td 03.5 sao
-      tr.tr
-         td.td Matcha 03
-         td.td Xanh dam hon nua
-         td.td 1.5 Sao
-         td.td 3.5 Sao
-         td.td 4 sao
-  
+.row.content_header
+   ul.text-capitalize
+      li.col-sm-12.col-md-6.voffset2
+         a(href="#products#plsanpham")
+            span.glyphicon.glyphicon-chevron-right
+            span &nbsp;Phân loại Sản phẩm
+      li.col-sm-12.col-md-6.voffset2
+         a(href="#products#danhmucmatch")
+            span.glyphicon.glyphicon-chevron-right
+            span &nbsp;Danh mục Sản phẩm
+
+.row.detailContent
+   a(name="plsanpham")
+   h3.col-lg-12.zmarginLF
+      span.glyphicon.glyphicon-chevron-right
+      span &nbsp;Phân loại Sản phẩm
+   .col-lg-12.hline_content.zmarginLF
+   .text-justify.zmarginLF.col-lg-12
+      p Sản phẩm matcha chất lượng tốt nhất khi được làm từ các lá trà gần ngọn nhât, nơi tập trung các chất dinh dưỡng quý của trà xanh. Lá trà ngọn giàu cholorophyll – chất diệp lục nổi tiếng với khả năng thải độc cơ thể, có màu xanh lá tươi. Càng về thấp hơn so với ngọn, lá trà càng cho màu sắc matcha ngả sâu hơn về vàng. Các lá trà già hơn chứa ít hơn các acid amin đặc trưng, tạo được ít hơn vị ngọt hậu lưu lại trên lưỡi, tăng thêm vị đắng của trà.
+      .detailContent.panel.compareTable.center-block
+         .panel-heading
+            .text-center.panel-title
+               h2
+                  strong.text-capitalize So sánh các sản phẩm Matcha Atani
+
+         table.table.table-hover.table-curved
+            thead.thead
+               th.th
+                  img.center-block.img-responsive.img-rounded(src="images/logo.png")
+               th.th Màu Sắc
+               th.th Độ giàu dinh dưỡng
+               th.th Mùi thơm trà xanh
+               th.th Vị Đắng
+            tr.tr
+               td.td.text-matcha-name Matcha 01
+               td.td
+                  .productMatchaCircle.productMatcha01 &#x25cf;
+               td.td
+                  input.rating.rating-system(type="number", data-size='xs', value=3)
+               td.td
+                  input.rating.rating-system(type="number",data-size='xs', value=4)
+               td.td
+                  input.rating.rating-system(type="number",data-size='xs', value=3)
+            tr.tr
+               td.td.text-matcha-name Matcha 02
+               td.td
+                  .productMatchaCircle.productMatcha02 &#x25cf;
+               td.td
+                  input.rating.rating-system(type="number",data-size='xs', value=2)
+               td.td
+                  input.rating.rating-system(type="number",data-size='xs', value=4)
+               td.td
+                  input.rating.rating-system(type="number",data-size='xs', value=3.5)
+            tr.tr
+               td.td.text-matcha-name Matcha 03
+               td.td
+                  .productMatchaCircle.productMatcha03 &#x25cf;
+               td.td
+                  input.rating.rating-system(type="number",data-size='xs', value=1.5)
+               td.td
+                  input.rating.rating-system(type="number",data-size='xs', value=4)
+               td.td
+                  input.rating.rating-system(type="number",data-size='xs', value=4)
+      p Hiện nay Atani cung cấp 3 sản phẩm matcha: Matcha 01, Matcha 02 và Matcha 03. Theo thứ tự, được sản xuất từ lá trà thu hoạch lần thứ nhất, thứ hai và thứ ba trong năm (tương ứng với tên gọi vụ xuân, vụ hè và vụ thu). Càng về cuối năm, dinh dưỡng quý trong matcha càng giảm, kéo theo vị đắng tăng lên và màu sắc ngả vàng.
+   .voffset1
+
+   a(name="danhmucmatch")
+   h3.col-lg-12.zmarginLF
+      span.glyphicon.glyphicon-chevron-right
+      span &nbsp;Sản xuất Matcha
+   .col-lg-12.hline_content.zmarginLF
+   .col-md-4.col-sm-12
+      h3.text-primary.text-center.productMatcha01.textBold Matcha 01
+      img.img-responsive.img-rounded(src="images/sp01.png")
+      h4 Bột trà xanh nguyên chất Nhật Bản
+      h4 Giá bán: 300.000VNĐ
+   .col-md-4.col-sm-12
+      h3.text-primary.text-center.productMatcha02.textBold Matcha 02
+      img.img-responsive.img-rounded(src='images/sp01.png')
+      h4 Bột trà xanh nguyên chất Nhật Bản
+      h4 Giá bán: 250.000VNĐ
+   .col-md-4.col-sm-12
+      h3.text-primary.text-center.productMatcha03.textBold Matcha 03
+      img.img-responsive.img-rounded(src='images/sp01.png')
+      h4 Bột trà xanh nguyên chất Nhật Bản
+      h4 Giá bán: 200.000VNĐ

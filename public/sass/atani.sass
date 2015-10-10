@@ -1,5 +1,5 @@
 @import "bootstrap.min.css"
-@import "star-rating.min.sass"
+@import "star-rating.min.css"
 
 $fontstyle: italic
 $maincolorback: #b8dd5a
@@ -33,8 +33,11 @@ $HBorderCurved: solid $contentBackColor 1px
 
 @font-face
   font-family: "VNFQuicksandBook"
-  src: url("fonts/VNFQuicksandBook.ttf") format("truetype")
+  src: url("../fonts/VNFQuicksandBook.ttf") format("truetype")
 
+@font-face
+  font-family: "UVHMoiHong"
+  src: url("../fonts/UVNMoiHong.ttf") format("truetype")
 
 .voffset
   margin-top: $voffset
@@ -216,3 +219,43 @@ table
 
 .table-curved > :last-child > :last-child > :last-child
   border-radius: 0 0 6px 0
+
+.table-curved
+  td, th
+    vertical-align: middle !important
+
+.text-matcha-name
+  font-family: UVHMoiHong
+  font-weight: bold
+  font-size: 35px
+
+.compareTable
+  background-color: #fff2d2
+  width: 80%
+
+td
+  .productMatchaCircle
+    font-size: 3em
+    padding: 0 0 0 0
+
+$matcha01Color: #8ec623
+$matcha02Color: #88a807
+$matcha03Color: #96a701
+
+.productMatcha01
+  color: $matcha01Color
+  font-color: $matcha01Color
+
+.productMatcha02
+  color: $matcha02Color
+  font-color: $matcha02Color
+
+.productMatcha03
+  color: $matcha03Color
+  font-color: $matcha03Color
+
+.rating-xs
+  font-size: 1.5em
+
+.textBold
+  font-weight: bolder
