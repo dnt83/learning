@@ -8,97 +8,97 @@
   font-family: "UVHMoiHong";
   src: url("../fonts/UVNMoiHong.ttf") format("truetype");
 }
-/* line 42, ../sass/atani.sass */
+/* line 44, ../sass/atani.sass */
 .voffset {
   margin-top: 2px;
 }
 
-/* line 45, ../sass/atani.sass */
+/* line 47, ../sass/atani.sass */
 .voffset1 {
   margin-top: 4px;
 }
 
-/* line 48, ../sass/atani.sass */
+/* line 50, ../sass/atani.sass */
 .voffset2 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 52, ../sass/atani.sass */
+/* line 54, ../sass/atani.sass */
 .voffset3 {
   margin-top: 15px;
 }
 
-/* line 55, ../sass/atani.sass */
+/* line 57, ../sass/atani.sass */
 .voffset4 {
   margin-top: 20px;
 }
 
-/* line 59, ../sass/atani.sass */
+/* line 61, ../sass/atani.sass */
 .brand-image {
   max-height: 48px;
   margin-top: -14px;
   border-radius: 20px;
 }
 
-/* line 64, ../sass/atani.sass */
+/* line 66, ../sass/atani.sass */
 body {
   padding-top: 60px;
 }
 
-/* line 67, ../sass/atani.sass */
+/* line 69, ../sass/atani.sass */
 .footer {
   padding-top: 25px;
 }
 
-/* line 70, ../sass/atani.sass */
+/* line 72, ../sass/atani.sass */
 .footer div {
   background-color: #1d9531;
   color: white;
 }
 
-/* line 74, ../sass/atani.sass */
+/* line 76, ../sass/atani.sass */
 ul {
   list-style-type: none;
 }
 
-/* line 77, ../sass/atani.sass */
+/* line 79, ../sass/atani.sass */
 .hline {
   background-color: #b8dd5a;
   height: 5px;
 }
 
-/* line 81, ../sass/atani.sass */
+/* line 83, ../sass/atani.sass */
 .banner {
-  background-color: #b8dd5a;
+  max-width: 900px;
 }
 
-/* line 84, ../sass/atani.sass */
+/* line 86, ../sass/atani.sass */
 .content_background {
   background-color: #c1cb80;
 }
 
-/* line 87, ../sass/atani.sass */
+/* line 89, ../sass/atani.sass */
 div {
   color: #1d9531;
 }
 
-/* line 90, ../sass/atani.sass */
+/* line 92, ../sass/atani.sass */
 #mainmenu {
   background-color: #1d9531;
 }
-/* line 94, ../sass/atani.sass */
+/* line 96, ../sass/atani.sass */
 #mainmenu ul li:not(.active) a {
   color: white;
 }
 
-/* line 98, ../sass/atani.sass */
+/* line 100, ../sass/atani.sass */
 .navbar-default .navbar-brand {
   font-weight: 700;
   color: white !important;
 }
 
-/* line 102, ../sass/atani.sass */
+/* line 104, ../sass/atani.sass */
 #site-name a {
   position: absolute;
   top: 10px;
@@ -110,7 +110,7 @@ div {
   color: white;
 }
 
-/* line 113, ../sass/atani.sass */
+/* line 115, ../sass/atani.sass */
 #slogan a {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -120,25 +120,25 @@ div {
   left: 180px;
 }
 
-/* line 121, ../sass/atani.sass */
+/* line 123, ../sass/atani.sass */
 .img_overlay {
   position: absolute;
   top: 10px;
   left: 25px;
 }
 
-/* line 126, ../sass/atani.sass */
+/* line 128, ../sass/atani.sass */
 .img-circle {
   height: auto;
   max-width: 120px;
 }
 
-/* line 130, ../sass/atani.sass */
+/* line 132, ../sass/atani.sass */
 .mainPic {
   height: 350px;
 }
 
-/* line 133, ../sass/atani.sass */
+/* line 135, ../sass/atani.sass */
 .backgroundMain {
   background: #f6e6b4;
   background: -moz-linear-gradient(left, #f6e6b4 0%, #ed9017 100%);
@@ -150,51 +150,51 @@ div {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=1 );
 }
 
-/* line 143, ../sass/atani.sass */
+/* line 145, ../sass/atani.sass */
 .advTea {
   background-color: #FFFFCC;
 }
 
-/* line 146, ../sass/atani.sass */
+/* line 148, ../sass/atani.sass */
 .advBigger {
   font-size: 200%;
 }
 
-/* line 150, ../sass/atani.sass */
+/* line 152, ../sass/atani.sass */
 .footer a {
   color: #FFFFCC;
 }
 
-/* line 153, ../sass/atani.sass */
+/* line 155, ../sass/atani.sass */
 .zmarginLF {
   padding-left: 0px;
   padding-right: 0px;
 }
 
-/* line 157, ../sass/atani.sass */
+/* line 159, ../sass/atani.sass */
 .note_link {
   font-family: VNFQuicksandBook, sans-serif;
 }
 
-/* line 160, ../sass/atani.sass */
+/* line 162, ../sass/atani.sass */
 .content_header {
   background-color: #1d9531;
   font-size: 15px;
   font-family: VNFQuicksandBook, sans-serif;
   font-color: white;
 }
-/* line 165, ../sass/atani.sass */
+/* line 167, ../sass/atani.sass */
 .content_header a {
   color: white;
 }
 
-/* line 168, ../sass/atani.sass */
+/* line 170, ../sass/atani.sass */
 .hline_content {
   background-color: #006600;
   height: 2px;
 }
 
-/* line 172, ../sass/atani.sass */
+/* line 174, ../sass/atani.sass */
 .detailContent {
   font-family: VNFQuicksandBook;
   font-size: 18px;
@@ -202,12 +202,12 @@ div {
   background-color: white;
 }
 
-/* line 181, ../sass/atani.sass */
+/* line 183, ../sass/atani.sass */
 table tr th, table tr td, table thead th, table thead td {
   text-align: center;
 }
 
-/* line 184, ../sass/atani.sass */
+/* line 186, ../sass/atani.sass */
 .table-curved {
   border-collapse: separate;
   border: solid #c1cb80 1px;
@@ -216,103 +216,103 @@ table tr th, table tr td, table thead th, table thead td {
   border-top: 0px;
 }
 
-/* line 192, ../sass/atani.sass */
+/* line 194, ../sass/atani.sass */
 .table-curved > thead:first-child > tr:first-child > th {
   border-bottom: 0px;
   border-top: solid #c1cb80 3px;
   border-bottom: solid #c1cb80 3px;
 }
 
-/* line 198, ../sass/atani.sass */
+/* line 200, ../sass/atani.sass */
 .table-curved td, .table-curved th {
   border-left: solid #c1cb80 1px;
   border-top: solid #c1cb80 1px;
 }
-/* line 201, ../sass/atani.sass */
-.table-curved td img, .table-curved th img {
-  max-height: 50px;
-}
 /* line 203, ../sass/atani.sass */
+.table-curved td img, .table-curved th img {
+  max-height: 10vw;
+}
+/* line 205, ../sass/atani.sass */
 .table-curved td:first-child, .table-curved th:first-child {
   border-left: solid #c1cb80 3px;
 }
-/* line 205, ../sass/atani.sass */
+/* line 207, ../sass/atani.sass */
 .table-curved td:last-child, .table-curved th:last-child {
   border-right: solid #c1cb80 3px;
 }
-/* line 207, ../sass/atani.sass */
+/* line 209, ../sass/atani.sass */
 .table-curved tr:last-child > td {
   border-bottom: solid #c1cb80 3px;
 }
 
-/* line 211, ../sass/atani.sass */
+/* line 213, ../sass/atani.sass */
 .table-curved > :first-child > :first-child > :first-child {
   border-radius: 6px 0 0 0;
 }
 
-/* line 214, ../sass/atani.sass */
+/* line 216, ../sass/atani.sass */
 .table-curved > :first-child > :first-child > :last-child {
   border-radius: 0 6px 0 0;
 }
 
-/* line 217, ../sass/atani.sass */
+/* line 219, ../sass/atani.sass */
 .table-curved > :last-child > :last-child > :first-child {
   border-radius: 0 0 0 6px;
 }
 
-/* line 220, ../sass/atani.sass */
+/* line 222, ../sass/atani.sass */
 .table-curved > :last-child > :last-child > :last-child {
   border-radius: 0 0 6px 0;
 }
 
-/* line 224, ../sass/atani.sass */
+/* line 226, ../sass/atani.sass */
 .table-curved td, .table-curved th {
   vertical-align: middle !important;
 }
 
-/* line 227, ../sass/atani.sass */
+/* line 229, ../sass/atani.sass */
 .text-matcha-name {
   font-family: UVHMoiHong;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 3vw;
 }
 
-/* line 232, ../sass/atani.sass */
+/* line 234, ../sass/atani.sass */
 .compareTable {
   background-color: #fff2d2;
   width: 80%;
 }
 
-/* line 237, ../sass/atani.sass */
+/* line 239, ../sass/atani.sass */
 td .productMatchaCircle {
-  font-size: 3em;
+  font-size: 4vw;
   padding: 0 0 0 0;
 }
 
-/* line 245, ../sass/atani.sass */
+/* line 247, ../sass/atani.sass */
 .productMatcha01 {
   color: #8ec623;
   font-color: #8ec623;
 }
 
-/* line 249, ../sass/atani.sass */
+/* line 251, ../sass/atani.sass */
 .productMatcha02 {
   color: #88a807;
   font-color: #88a807;
 }
 
-/* line 253, ../sass/atani.sass */
+/* line 255, ../sass/atani.sass */
 .productMatcha03 {
   color: #96a701;
   font-color: #96a701;
 }
 
-/* line 257, ../sass/atani.sass */
+/* line 259, ../sass/atani.sass */
 .rating-xs {
-  font-size: 1.5em;
+  font-size: 2.5vw;
 }
 
-/* line 260, ../sass/atani.sass */
+/* line 262, ../sass/atani.sass */
 .textBold {
   font-weight: bolder;
 }
