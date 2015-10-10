@@ -1,0 +1,24 @@
+.container
+    .row
+        .voffset4
+        .col-xs-12.col-md-12
+            h4.textBold Sản phẩm được nhập khẩu và phân phối bởi
+            h4.text-uppercase.textBold Công ty TNHH thương mại và xuất nhập khẩu VIHABA
+        .col-xs-12.col-md-12 Địa chỉ:
+            span.textBold &nbsp;Số 10 Ngách 91/16 Lương Đình Của, Phương Mai, Đống Đa, Hà Nội
+        .col-xs-12.col-md-12 Văn phòng giao dịch:
+            span.textBold &nbsp;Số 28 Vũ Phạm Hàm, Yên Hòa, Đống Đa, Hà Nội.
+        .col-xs-12.col-md-12 Điện thoại:
+            span.textBold &nbsp;0466 730 333
+            span / Hotline:
+            span.textBold &nbsp;090 567 1102
+        .col-xs-12.col-md-12
+            | Website:&nbsp;
+            a.textBold(ng-href="{{ urlHome }}") {{ urlHome }}
+        .col-xs-12.col-md-12
+            | Email:&nbsp;
+            a.textBold(ng-href="mailto:{{ emailHome }}/?subject={{ subject}}") atani@vihaba.vn
+            | &nbsp;/&nbsp;
+            a(ng-href="{{ urlFB }}",target="_blank")
+                span.fa.fa-facebook-square
+                span.textBold &nbsp;{{ urlFB_name }}
