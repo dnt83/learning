@@ -22,7 +22,7 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
                 .navbar-header
                     a.navbar-brand.brand.visible-xs
                         img.brand-image.img-circle.img-responsive(ng-src="{{ logo_url }}")
-                    button.navbar-toggle.collapsed(type='button',data-toggle="collapse")
+                    button.navbar-toggle.collapsed(type='button',data-toggle="collapse",data-target=".navbar-collapse")
                         span.icon-bar
                         span.icon-bar
                         span.icon-bar
@@ -36,19 +36,9 @@ html(ng-app='atanivn',ng-controller="atanimainCtrl")
             .row
                 .col-md-12.col-xs-12
                     a(href='#/',title='Home')
-                        img.banner(class='center-block img-responsive',alt='Banner Image',ng-src="{{ banner_url }}")
+                        img.center-block.img-responsive(alt='Banner Image Loading',ng-src="{{ banner_url }}")
             .main
                 div(ng-view)
-            //.row.voffset4
-            //    ul
-            //        li.voffset2.col-xs-12.col-md-6.text-left(ng-repeat="note in notes")
-            //            span.fa.fa-hand-o-right
-            //            span.note_link &nbsp;{{ note }}
-            //.row
-            //    ul
-            //        li.voffset2.col-xs-12.col-md-6
-            //            i.fa.fa-hand-o-right.btn.toogleConent(,data-value=) Content 1
-            //            i.fa.fa-hand-o-right.btn.toogleConent(data-target="antanicontent",data-value="generatematcha") Content 2
         .footer
             .container
                 .row

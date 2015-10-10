@@ -280,39 +280,38 @@ table tr th, table tr td, table thead th, table thead td {
 /* line 234, ../sass/atani.sass */
 .compareTable {
   background-color: #fff2d2;
-  width: 80%;
 }
 
-/* line 239, ../sass/atani.sass */
+/* line 238, ../sass/atani.sass */
 td .productMatchaCircle {
   font-size: 4vw;
   padding: 0 0 0 0;
 }
 
-/* line 247, ../sass/atani.sass */
+/* line 246, ../sass/atani.sass */
 .productMatcha01 {
   color: #8ec623;
   font-color: #8ec623;
 }
 
-/* line 251, ../sass/atani.sass */
+/* line 250, ../sass/atani.sass */
 .productMatcha02 {
   color: #88a807;
   font-color: #88a807;
 }
 
-/* line 255, ../sass/atani.sass */
+/* line 254, ../sass/atani.sass */
 .productMatcha03 {
   color: #96a701;
   font-color: #96a701;
 }
 
-/* line 259, ../sass/atani.sass */
+/* line 258, ../sass/atani.sass */
 .rating-xs {
   font-size: 2.5vw;
 }
 
-/* line 262, ../sass/atani.sass */
+/* line 261, ../sass/atani.sass */
 .textBold {
   font-weight: bolder;
 }
