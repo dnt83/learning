@@ -35,6 +35,9 @@
             .when('/contactUS', {
                 templateUrl : 'contactus.html',
                 controller  : 'contactUS'
+            })
+            .otherwise({
+               redirectTo:"/"
             });
     });
 
